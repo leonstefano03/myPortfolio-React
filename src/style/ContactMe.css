@@ -1,0 +1,208 @@
+.fondo {
+  background-color: #011329;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+.cont-form { 
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+   
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.cont-formm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-left: 12%;
+  
+  
+}
+.cont-formm h1{
+  margin-top: 0;
+  font-size: 60px;
+  font-family: "Livvic", sans-serif;
+  color: #ffaf00;
+}
+.form {background-color: #ffb700;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #330808, #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border: 2px solid #ff5900;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 1));
+}
+
+
+
+.buttonContact {
+  margin-top: 10px;
+  font-family: "Livvic", sans-serif;
+  font-size: 25px;
+  background: #ff5900;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.buttonContact:hover {
+  border: 2px solid #ff5900;
+  background: #00000000;
+  color: #ff5900;
+}
+
+.buttonContact:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: "Livvic", sans-serif;
+  transition: 0.2s;
+  font-size: 30px;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #9b725b;
+}
+
+.textarea {
+  font-family: "Livvic", sans-serif;
+  width: 100%;
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-size: 30px;
+}
+
+.textarea::placeholder {
+  color: #9b725b;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+
+.container-line9 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  animation: anim9 6s forwards;
+  animation-delay: 0;
+  opacity: 0;
+}
+@keyframes anim9 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cont-img{
+   margin-bottom: 115px;
+ margin-right: 5%;
+}
+.starsAlone{
+  position: absolute;
+  
+}
+.alienContact{
+  
+  position: relative;
+animation: anim10 7s alternate infinite;
+}
+
+@keyframes anim10 {
+  0% {
+    transform: translateY(0px)  ;
+  }
+
+  50% {
+    transform: translateY(-30px) ;
+  }
+
+  100% {
+    transform: translateY(0px) ;
+  }
+}
+.containerr-line9 {
+  margin-right: 15%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  height: 50%;
+}
+.line9 {
+  position: relative;;
+  width: 2.5rem;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+.line9:nth-child(1) {
+  background-color: #3c7f72;
+}
+.line9:nth-child(2) {
+  background-color: #992800;
+}
+.line9:nth-child(3) {
+  background-color: #d34a24;
+}
+.line9:nth-child(4) {
+  background-color: #104350;
+}

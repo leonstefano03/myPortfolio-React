@@ -1,0 +1,257 @@
+.alien {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  object-fit: cover;
+  top: 13%;
+  left: 11.5%;
+  width: 300px;
+  animation: anim5 2s alternate infinite;
+}
+@keyframes anim5 {
+  100% {
+    top: 10%;
+  }
+}
+
+.container-line4 {
+  position: absolute;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: anim4 6s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes anim4 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.line4 {
+  background-color: #000;
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.line4:nth-child(1) {
+  background-color: #ffaf00;
+}
+.line4:nth-child(2) {
+  background-color: #d34a24;
+}
+.line4:nth-child(3) {
+  background-color: #992800;
+}
+.line4:nth-child(4) {
+  background-color: #3c7f72;
+}
+
+.container-line5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  animation: anim6 6s forwards;
+  animation-delay: 0;
+  opacity: 0;
+}
+
+@keyframes anim6 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.containerr-line5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+}
+.line5 {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.line5:nth-child(1) {
+  background-color: #ffaf00;
+}
+.line5:nth-child(2) {
+  background-color: #d34a24;
+}
+.line5:nth-child(3) {
+  background-color: #992800;
+}
+.line5:nth-child(4) {
+  background-color: #3c7f72;
+}
+
+.container-line6 {
+  position: relative;
+  width: 100vw;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  animation: anim7 6s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes anim7 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.line6 {
+  width: 2.5rem;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+.line6:nth-child(1) {
+  background-color: #3c7f72;
+}
+.line6:nth-child(2) {
+  background-color: #992800;
+}
+.line6:nth-child(3) {
+  background-color: #d34a24;
+}
+.line6:nth-child(4) {
+  background-color: #104350;
+}
+
+.container-line7 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  animation: anim8 6s forwards;
+  animation-delay: 0;
+  opacity: 0;
+}
+@keyframes anim8 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.containerr-line7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 15%;
+}
+.line7 {
+  width: 2.5rem;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+.line7:nth-child(1) {
+  background-color: #3c7f72;
+}
+.line7:nth-child(2) {
+  background-color: #992800;
+}
+.line7:nth-child(3) {
+  background-color: #d34a24;
+}
+.line7:nth-child(4) {
+  background-color: #104350;
+}
+
+.container-skills {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerr-skills {
+  background-color: #ffaf00;
+  top: 0;
+  width: 750px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  text-align: center;
+}
+.containerr-skills h1 {
+  font-family: "Livvic", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  color: #992800;
+}
+.container-square {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.square {
+  position: relative;
+  background-color: #011329;
+  width: 130px;
+  height: 90px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.square img:hover{
+  transform: scale(1.2) translateY(0px);
+  
+}
+.square img {
+  width: 70px; transition: transform 0.3s ease;
+  cursor: pointer;
+}
+#mongo img {
+  width: 118px;
+}
+#css img {
+  width: 66px;
+}
+#html img {
+  width: 70px;
+}

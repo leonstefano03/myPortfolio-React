@@ -1,0 +1,230 @@
+.fondo {
+  background-color: #011329;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.container-ologram {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.container-ologram-cart {
+  position: relative;
+  left: 10%;
+  height: 900px;
+  width: 520px;
+  z-index: 10;
+  display: flex;
+  justify-content: center; align-items: flex-start; 
+}
+.container-ologram img {
+  position: absolute;
+  height: 900px;
+  z-index: 10;
+}
+.cart-project {
+  color: #ffffff;
+  display: flex;
+  z-index: 200;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; /* Agregado para apilar los elementos verticalmente */
+  font-family: "Livvic", sans-serif;
+  height: 100%; /* Modificado para ocupar todo el espacio disponible */
+  width: 100%; /* Modificado para ocupar todo el espacio disponible */
+}
+.cart-slider {
+  color: #ffffff;
+  display: flex;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  font-family: "Livvic", sans-serif;
+  height: 100%;
+  width: 60%;
+}
+.img-project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  margin-top: 90px;
+}
+
+.img-project img {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+.cart-project h1 {
+  display: flex;
+  justify-content: center;
+
+  height: 15%;
+  color: #b197db;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cart-project h2 {
+  height: 50%;
+  color: #3c7f72;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-project {
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background-color: transparent;
+  margin-top: 20px;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.button::before {
+  left: -10px;
+  background: #240046;
+}
+
+.button::after {
+  right: -10px;
+  background: #5a189a;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: 58%;
+}
+
+.button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+}
+
+.button span {
+  color: #b197db;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+.container-planets {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.space-img {
+  position: absolute;
+  height: 800px;
+  left: 28%;
+  z-index: 5;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 1));
+}
+.planets {
+  height: 100%;
+  width: 100%;
+}
+.planets img {
+  cursor: pointer;
+  z-index: 8;
+  position: absolute;
+  animation: planet-animation 10s linear infinite;
+}
+.planets img:nth-child(1) {
+  height: 150px;
+  top: 600px;
+  left: 35%;
+}
+.planets img:nth-child(2) {
+  height: 160px;
+  top: 400px;
+  left: 42%;
+}
+.planets img:nth-child(3) {
+  height: 150px;
+  top: 250px;
+  left: 60%;
+}
+.planets img:nth-child(4) {
+  height: 100px;
+  top: 250px;
+  left: 75%;
+}
+.planets img:nth-child(5) {
+  height: 170px;
+  top: 400px;
+  left: 75%;
+}
+.planets img:nth-child(6) {
+  height: 190px;
+  top: 580px;
+  left: 65%;
+}
+.planets img:nth-child(7) {
+  height: 170px;
+  top: 730px;
+  left: 53%;
+}
+.planets img:nth-child(8) {
+  height: 150px;
+  top: 780px;
+  left: 40%;
+}
+
+@keyframes planet-animation {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+

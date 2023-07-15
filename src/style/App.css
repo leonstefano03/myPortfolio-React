@@ -1,0 +1,71 @@
+body {
+  cursor: url("../assets/spaceShip.png");
+}
+.main {
+  position: relative;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory; 
+}
+.orbit img{
+  height: 200px;
+}
+.orbit {
+  top: 450px;
+  left: 1160px;
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: 200px; /* Ajusta el tamaño según tus necesidades */
+  position: relative;
+
+  animation: planet-animation 1s alternate infinite;
+
+  z-index: 300;
+}
+@keyframes planet-animation {
+  0% {
+    transform: translate(-30px, -210px) rotate(0deg);
+  }
+  9.09% {
+    transform: translate(170px, -240px) rotate(90deg);
+  }
+  18.18% {
+    transform: translate(470px, -260px) rotate(180deg);
+  }
+  25.18% {
+    transform: translate(650px, -200px) rotate(270deg);
+  }
+  31.18% {
+    transform: translate(590px, -140px) rotate(360deg);
+  }
+  36.36% {
+    transform: translate(500px, -10px) rotate(450deg);
+  }
+  45.45% {
+    transform: translate(300px, 160px) rotate(540deg);
+  }
+  54.54% {
+    transform: translate(-30px, 300px) rotate(630deg);
+  }
+  63.63% {
+    transform: translate(-250px, 310px) rotate(720deg);
+  }
+  70.63% {
+    transform: translate(-400px, 300px) rotate(810deg);
+  }
+  75.63% {
+    transform: translate(-450px, 270px) rotate(900deg);
+  }
+  80.72% {
+    transform: translate(-380px, 140px) rotate(990deg);
+  }
+  85.72% {
+    transform: translate(-300px, 0px) rotate(1080deg);
+  }
+  89.81% {
+    transform: translate(-200px, -90px) rotate(1170deg);
+  }
+  100% {
+    transform: translate(-30px, -210px) rotate(1260deg);
+  }
+}

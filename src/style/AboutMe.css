@@ -1,0 +1,284 @@
+.container-foto2 {
+  position: absolute;
+  width: 35%;
+  height: 100vh;
+  right: 0;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+  animation: anim2 6s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.foto2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/space.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container-line2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  animation: anim2 4.5s forwards;
+  animation-delay: 0;
+  opacity: 0;
+}
+.containerr-line2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+}
+.line2 {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.line2:nth-child(1) {
+  background-color: #ffaf00;
+}
+.line2:nth-child(2) {
+  background-color: #d34a24;
+}
+.line2:nth-child(3) {
+  background-color: #992800;
+}
+.line2:nth-child(4) {
+  background-color: #3c7f72;
+}
+
+.astroBall {
+  position: relative;
+  z-index: 10;
+  display: block;
+  object-fit: cover;
+  top: 19%;
+  left: 60%;
+  width: 500px;
+  animation: anim3 6s alternate infinite;
+}
+@keyframes anim3 {
+  100% {
+    left: 58%;
+  }
+}
+@keyframes anim2 {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.acercaDeMi {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 6%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.acercaDeMi h1 {
+  font-family: "Livvic", sans-serif;
+  color: #3c7f72;
+  font-size: 7.5rem;
+  margin: 0;
+}
+
+.acercaDeMi h3 {
+  font-family: "Livvic", sans-serif;
+  color: #ffaf00;
+  font-size: 2rem;
+  margin: 0;
+}
+.div-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.buttonCV#space-btn {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  border: none;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: inset 0px 0px 21px #1f1676;
+  background: #03001e;
+  cursor: pointer;
+  font-family: "Livvic", sans-serif;
+}
+
+.buttonCV#space-btn:hover {
+  background: linear-gradient(180deg, #3b2ad5 0%,#88007d 60%,#ff0055c4 100%);
+  box-shadow: 0px 5px 10px #03001e,inset 0px 5px 10px #8611d4,inset 0 -5px 10px #ff0055a1;
+}
+
+.btn-container:hover {
+  background: #03001e;
+  box-shadow: 0px -10px 40px #9611d4,0px 5px 10px #00a2ffe3,inset 0px 10px 21px #3b2ad5;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  width: 205px;
+  height: 65px;
+  background: linear-gradient(0deg, #c23604 0%,#c23604 100%);
+}
+
+.buttonCV span {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttonCV div.star {
+  opacity: 0;
+  position: absolute;
+  border-radius: 100%;
+  background-color: white;
+  width: 1px;
+  height: 1px;
+}
+
+.buttonCV:hover .star {
+  opacity: 1;
+}
+
+.buttonCV .planet {
+  margin-left: -2.5em;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  background: linear-gradient(rgb(255, 0, 0), transparent),linear-gradient(to top left, rgb(255, 0, 212), transparent), linear-gradient(to top right, rgb(251, 255, 0), transparent);
+  background-blend-mode: screen;
+  background-size: 100% 200%;
+  filter: drop-shadow(0px 0px 4px rgb(82, 59, 16));
+}
+
+.buttonCV:hover .planet {
+  z-index: 1;
+  opacity: 1;
+  animation: orbita 6s reverse linear infinite;
+}
+
+.planet::after {
+  content: '';
+  width: 40px;
+  height: 10px;
+  border: 3px solid #813dff;
+  filter: drop-shadow(0px 0px 1px #cf3333);
+  border-width: 0px 3px 3px 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  border-radius: 50%;
+}
+
+.planet::before {
+  position: absolute;
+  color: rgb(255, 0, 0);
+  visibility: hidden;
+}
+
+.moon {
+  margin-left: -3rem;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 5px rgb(146, 146, 140);
+}
+
+.moon::after {
+  position: absolute;
+  content: '';
+  margin-top: 15%;
+  box-shadow: 0px 0px 10px 3px #333;
+  margin-left: -10%;
+  border-radius: 100%;
+  width: 3px;
+  height: 3px;
+  background-color: rgb(121, 121, 121);
+}
+
+.moon1::after {
+  position: absolute;
+  content: '';
+  margin-top: 65%;
+  box-shadow: 0px 0px 8px 3px #333;
+  margin-left: -9px;
+  border-radius: 100%;
+  width: 2px;
+  height: 2px;
+  background-color: rgb(121, 121, 121);
+}
+
+.moon::before {
+  position: absolute;
+  content: '';
+  margin-top: 30%;
+  margin-left: -30%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 8px 1px rgb(3, 3, 3);
+  width: 5px;
+  height: 5px;
+  background-color: rgb(134, 133, 133);
+}
+
+.moon1::before {
+  position: absolute;
+  content: '';
+  margin-top: 70%;
+  margin-left: 4%;
+  border-radius: 100%;
+  box-shadow: -5px 1px 4px 3px rgb(134, 133, 133);
+  width: 2px;
+  height: 2px;
+  background-color: rgb(134, 133, 133);
+}
+
+.buttonCV span.moon,span.moon1 {
+  opacity: 0;
+}
+
+.buttonCV:hover span.moon,span.moon1 {
+  z-index: 2;
+  opacity: 1;
+  animation: orbita 4s linear infinite;
+}
+
+@keyframes orbita {
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(90px);
+  }
+
+  100% {
+    rotate: 360deg;
+    transform: translateX(90px);
+  }
+}
