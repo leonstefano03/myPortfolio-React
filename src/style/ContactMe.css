@@ -6,11 +6,11 @@
   overflow: hidden;
   scroll-snap-align: center;
 }
-.cont-form { 
+.cont-form {
   position: relative;
   display: flex;
   justify-content: flex-start;
-   
+
   align-items: center;
   width: 100%;
   height: 100%;
@@ -22,38 +22,33 @@
   align-items: center;
   width: 40%;
   margin-left: 12%;
-  
-  
 }
-.cont-formm h1{
+.cont-formm h1 {
   margin-top: 0;
-  font-size: 60px;
+  font-size: 2.5vw;
   font-family: "Livvic", sans-serif;
   color: #ffaf00;
 }
-.form {background-color: #ffb700;
-  
+.form {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   background-image: linear-gradient(45deg, #330808, #3a2c09);
   border-radius: 2.5em;
-  padding: 30px;
-  width: 100%;
+  padding: 4%;
+  width: 80%;
   height: 100%;
   z-index: 10;
   border: 2px solid #ff5900;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 1));
 }
 
-
-
 .buttonContact {
-  margin-top: 10px;
+  margin-top: 2%;
   font-family: "Livvic", sans-serif;
-  font-size: 25px;
+  font-size: 90%;
   background: #ff5900;
   color: black;
   padding: 0.7em 5.5em;
@@ -80,8 +75,8 @@
 
 .input {
   width: calc(100% - 10px);
-  padding: 8px;
-  margin-bottom: 20px;
+  padding: 1%;
+  margin-bottom: 4%;
   border: 1px solid #66da4300;
   border-bottom: 1px solid #ff5900;
   outline: none;
@@ -89,7 +84,7 @@
   color: #ff5900;
   font-family: "Livvic", sans-serif;
   transition: 0.2s;
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .input:focus {
@@ -106,15 +101,14 @@
 .textarea {
   font-family: "Livvic", sans-serif;
   width: 100%;
-  padding: 8px;
-  height: 100px;
-  margin-bottom: 20px;
+  padding: 1%;
+  margin-bottom: 2%;
   border: 1px solid #66da4300;
   border-bottom: 1px solid #ff5900;
   outline: none;
   background-color: transparent;
   color: #ff5900;
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 .textarea::placeholder {
@@ -128,11 +122,10 @@
   color: white;
 }
 
-
 .container-line9 {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   top: 0;
   flex-direction: column;
@@ -152,46 +145,40 @@
     opacity: 1;
   }
 }
-.cont-img{
-   margin-bottom: 115px;
- margin-right: 5%;
+
+.containerr-line9 img {
+  right: -100%;
+  top: -65%;
+  height: 140%;
 }
-.starsAlone{
+.starsAlone {
   position: absolute;
-  
 }
-.alienContact{
-  
-  position: relative;
-animation: anim10 7s alternate infinite;
+.alienContact {
+  position: absolute;
+
+  animation: anim10 7s alternate infinite;
 }
 
 @keyframes anim10 {
-  0% {
-    transform: translateY(0px)  ;
-  }
-
-  50% {
-    transform: translateY(-30px) ;
-  }
-
   100% {
-    transform: translateY(0px) ;
+    transform: translateY(3%);
   }
 }
 .containerr-line9 {
-  margin-right: 15%;
+  margin-right: 20%;
   display: flex;
-  position: absolute;
+  position: relative;
   flex-direction: row;
   justify-content: center;
-  height: 50%;
+  height: 25vw;
 }
 .line9 {
-  position: relative;;
-  width: 2.5rem;
+  position: relative;
+  width: 1.6vw;
+  margin: 0.5vw;
   height: 100%;
-  margin: 0 0.5rem;
+ 
 }
 
 .line9:nth-child(1) {
@@ -205,4 +192,161 @@ animation: anim10 7s alternate infinite;
 }
 .line9:nth-child(4) {
   background-color: #104350;
+}
+
+
+@media (max-width: 450px) {
+
+  .cont-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    top: 7%;
+  }
+  .cont-formm {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin-left: 0%;
+  }
+  .cont-formm h1 {
+    margin-top: 0;
+    font-size: 6vw;
+    font-family: "Livvic", sans-serif;
+    color: #ffaf00;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap:1px;
+    background-image: linear-gradient(45deg, #330808, #3a2c09);
+    border-radius: 1.5em;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border: 1px solid #ff5900;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 1));
+  }
+  
+  .buttonContact {
+    margin-top: 2%;
+    font-family: "Livvic", sans-serif;
+    font-size: 3vw;
+    background: #ff5900;
+    color: black;
+    padding: 0.7em 5.5em;
+    display: flex;
+    align-items: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  
+  .buttonContact:hover {
+    border: 2px solid #ff5900;
+    background: #00000000;
+    color: #ff5900;
+  }
+  
+  .buttonContact:active {
+    border: 2px solid #66da4300;
+    background: #ff5900;
+    color: black;
+  }
+  
+  .input {
+    width: calc(100% - 10px);
+    padding: 1%;
+    margin-bottom: 4%;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+    font-family: "Livvic", sans-serif;
+    transition: 0.2s;
+    font-size: 3vw;
+  }
+  
+  .input:focus {
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .input::placeholder {
+    color: #9b725b;
+  }
+  
+  .textarea {
+    font-family: "Livvic", sans-serif;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    outline: none;
+    background-color: transparent;
+    color: #ff5900;
+    font-size: 3vw;
+  }
+  
+  .textarea::placeholder {
+    color: #9b725b;
+  }
+  
+  .textarea:focus {
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #ff5900;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .container-line9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    animation: anim9 6s forwards;
+    animation-delay: 0;
+    opacity: 0;
+  }
+
+  
+  .containerr-line9 img {
+    right: -90%;
+    top: -43%;
+    height: 105%;
+  }
+    .containerr-line9 {
+    margin-right: 0%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    height: 35%;
+  }
+  .line9 {
+    width: 3vw;
+    margin: 1.2vw;
+   
+  }
+  
 }

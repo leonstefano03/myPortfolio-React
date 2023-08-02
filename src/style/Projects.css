@@ -1,4 +1,4 @@
-.fondo {
+.fondoo {
   background-color: #011329;
   height: 100%;
   width: 100%;
@@ -8,26 +8,28 @@
 }
 
 .container-ologram {
+  position: relative;
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  overflow: hid
+  den;
 }
 .container-ologram-cart {
   position: relative;
-  left: 10%;
-  height: 900px;
-  width: 520px;
+  left: 14%;
+  width: 13%;
   z-index: 10;
   display: flex;
-  justify-content: center; align-items: flex-start; 
+  justify-content: center;
+  align-items: flex-start;
 }
 .container-ologram img {
   position: absolute;
-  height: 900px;
+  height: 100%;
   z-index: 10;
 }
 .cart-project {
@@ -35,7 +37,7 @@
   display: flex;
   z-index: 200;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column; /* Agregado para apilar los elementos verticalmente */
   font-family: "Livvic", sans-serif;
   height: 100%; /* Modificado para ocupar todo el espacio disponible */
@@ -47,52 +49,45 @@
   z-index: 200;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   font-family: "Livvic", sans-serif;
-  height: 100%;
-  width: 60%;
+  width: 100%;
+  margin-top: 20%;
+  margin-bottom: 10%;
 }
 .img-project {
   position: relative;
   display: flex;
   justify-content: center;
   height: 40%;
-  margin-top: 90px;
 }
 
 .img-project img {
   border-radius: 20px;
   overflow: hidden;
-  height: 300px;
   position: relative;
 }
 .cart-project h1 {
   display: flex;
   justify-content: center;
-
-  height: 15%;
+  text-align: center;
+  font-size: 1.5vw;
   color: #b197db;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5%;
 }
 .cart-project h2 {
-  height: 50%;
+  font-size: 1.1vw;
   color: #3c7f72;
   display: flex;
   width: 100%;
   justify-content: center;
-
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .button-project {
   display: flex;
-  height: 20%;
+  position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 }
 .button {
   display: inline-block;
@@ -103,9 +98,7 @@
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in;
-  z-index: 1;
   background-color: transparent;
-  margin-top: 20px;
   font-family: "Livvic", sans-serif;
   cursor: pointer;
 }
@@ -145,7 +138,7 @@
 
 .button span {
   color: #b197db;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   transition: all 0.3s ease-in;
 }
 .container-planets {
@@ -157,8 +150,9 @@
 }
 
 .space-img {
+  background-color: aliceblue;
   position: absolute;
-  height: 800px;
+  width: 65%;
   left: 28%;
   z-index: 5;
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 1));
@@ -174,43 +168,43 @@
   animation: planet-animation 10s linear infinite;
 }
 .planets img:nth-child(1) {
-  height: 150px;
-  top: 600px;
+  width: 7%;
+  top: 53%;
   left: 35%;
 }
 .planets img:nth-child(2) {
-  height: 160px;
-  top: 400px;
-  left: 42%;
+  width: 8%;
+  top: 38%;
+  left: 44%;
 }
 .planets img:nth-child(3) {
-  height: 150px;
-  top: 250px;
-  left: 60%;
+  width: 7%;
+  top: 26%;
+  left: 66%;
 }
 .planets img:nth-child(4) {
-  height: 100px;
-  top: 250px;
-  left: 75%;
+  width: 5%;
+  top: 25%;
+  left: 80%;
 }
 .planets img:nth-child(5) {
-  height: 170px;
-  top: 400px;
-  left: 75%;
+  width: 7%;
+  top: 40%;
+  left: 78%;
 }
 .planets img:nth-child(6) {
-  height: 190px;
-  top: 580px;
+  width: 12%;
+  top: 55%;
   left: 65%;
 }
 .planets img:nth-child(7) {
-  height: 170px;
-  top: 730px;
-  left: 53%;
+  width: 8%;
+  top: 65%;
+  left: 54%;
 }
 .planets img:nth-child(8) {
-  height: 150px;
-  top: 780px;
+  width: 11%;
+  top: 65%;
   left: 40%;
 }
 
@@ -228,3 +222,158 @@
   }
 }
 
+ @media (max-width: 450px) {
+  .fondoo {
+    background-image: url("../assets/stars.png");
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;background-size: cover;
+    background-position: center;
+  }
+  
+.container-ologram {
+  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container-ologram-cart {
+  position: relative;
+  left: 0%;
+  height: 70%;
+  width: 70%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-ologram img {
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+}
+.cart-project {
+  color: #ffffff;
+  display: flex;
+  z-index: 200;
+  align-content: center;
+  justify-content: flex-end;
+  flex-direction: column; /* Agregado para apilar los elementos verticalmente */
+  font-family: "Livvic", sans-serif;
+  height: 100%; /* Modificado para ocupar todo el espacio disponible */
+  width: 100%; /* Modificado para ocupar todo el espacio disponible */
+}
+.cart-slider {
+  color: #ffffff;
+  display: flex;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Livvic", sans-serif;
+  width: 70%;
+  margin-top: 18%;
+  margin-bottom: 10%;
+}
+.img-project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+.img-project img {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.cart-project h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4vw;
+  color: #b197db;
+  margin-top: 5%;
+}
+.cart-project h2 {
+  font-size: 3vw;
+  color: #3c7f72;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-project {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  display: inline-block;
+  width: 20vw;
+  height: 8vw;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  background-color: transparent;
+  font-family: "Livvic", sans-serif;
+  cursor: pointer;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.button::before {
+  left: -1vw;
+  background: #240046;
+}
+
+.button::after {
+  right: -1vw;
+  background: #5a189a;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: 58%;
+}
+
+.button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+}
+
+.button span {
+  color: #b197db;
+  font-size: 3.5vw;
+  transition: all 0.3s ease-in;
+}
+.container-planets {
+  display: none;
+}
+
+.space-img {
+  display: none;
+}
+
+
+  }

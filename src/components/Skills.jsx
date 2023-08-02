@@ -14,7 +14,7 @@ import redux from "../assets/logos/redux.png";
 
 function Skills() {
   return (
-    <section className="fondo">
+    <section className="fondo" id="skills">
       <div className="container-line4">
         <div className="line4"></div>
         <div className="line4"></div>

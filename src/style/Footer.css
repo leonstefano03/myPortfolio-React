@@ -1,0 +1,120 @@
+.fondo-footer {
+  background-color: #0c0c16;
+  height: 10%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+h1 {
+  color: #ffaf00;
+  font-size:120%;
+}
+
+.container-footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.logo-footer img {
+  width: 5vw;
+}
+
+.redes {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --whatsapp: #06ab48;
+  --linkedin: #0077b5;
+  --github: #171515;
+}
+
+.iconosRedes {
+  display: flex;
+  
+  
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.iconosRedes ul li {
+  display: inline;
+  margin: 0 5px; 
+}
+
+.iconosRedes ul li a {
+  padding: 0.3vw 0.8vw;
+  background: #3f1d1d;
+  color: #fff;
+  font-size: 200%;
+  transition: 0.2s;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.iconosRedes ul:hover a {
+  filter: blur(2px);
+}
+
+.iconosRedes ul li a:hover {
+  filter: none;
+}
+
+.iconosRedes ul li .facebook:hover {
+  background: var(--facebook);
+}
+.iconosRedes ul li .instagram:hover {
+  background: var(--instagram);
+}
+.iconosRedes ul li .whatsapp:hover {
+  background: var(--whatsapp);
+}
+.iconosRedes ul li .twitter:hover {
+  background: var(--twitter);
+}
+.iconosRedes ul li .linkedin:hover {
+  background: var(--linkedin);
+}
+.iconosRedes ul li .github:hover {
+  background: var(--github);
+}
+
+@media (max-width: 450px) {
+  .fondo-footer {
+    height: 10%;
+  }
+  h1 {
+    color: #ffaf00;
+    font-size:2.2vw;
+  }
+.logo-footer img {
+    width: 12vw;
+  }
+  .iconosRedes ul li {
+    margin: 0 0.5vw; 
+  }
+  .iconosRedes ul li a {
+    padding: 0.3vw 0.9vw;
+    font-size: 100%;
+  }
+  .iconosRedes ul li .facebook{
+    padding: 0.3vw 1.3vw;
+  }
+}

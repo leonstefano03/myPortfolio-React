@@ -5,7 +5,7 @@ import "../style/AboutMe.css";
 
 function AboutMe() {
   return (
-    <section className="fondo">
+    <section className="fondo" id="about">
       <div className="container-foto2">
         <div className="foto2"></div>
       </div>
@@ -20,11 +20,11 @@ function AboutMe() {
       <img className="astroBall" src={astroBall} alt="astro" />
 
       <div className="acercaDeMi">
-        <h1>ABOUT ME</h1>
-        <h3>
+        <h1 className="animate__animated animate__backInDown">ABOUT ME</h1>
+        <h3 className="animate__animated animate__backInDown">
           Hi i'm León Stéfano. I like to solve problems, being from day to day
-          or fixing physical things. When it comes to working in a team, I don't have
-          problem, I manage well, I say what I don't like and I try to
+          and fixing physical things. When it comes to working in a team, I don't have
+          any problem, I can handle things effectively, I say what I don't like and I try to
           carry out the order of work to have the best performance
           possible. I am a very neat, dedicated, respectful and
           responsible.

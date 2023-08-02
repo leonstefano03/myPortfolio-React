@@ -64,7 +64,7 @@ function Projects() {
   };
 
   return (
-    <section className="fondo">
+    <section className="fondoo" id="projects">
       <div className="container-ologram">
         <div className="container-ologram-cart">
           <img src={ologram} />
