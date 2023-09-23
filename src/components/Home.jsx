@@ -17,7 +17,7 @@ function Home() {
     } else {
       setIsMoving(!isMoving);
     }
-  };
+  }; 
 
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
