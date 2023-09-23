@@ -5,5 +5,5 @@
 npm install
 
 2. start the project:
-3. 
+
 npm start
