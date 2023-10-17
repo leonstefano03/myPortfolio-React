@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "../style/Projects.css";
 import ologram from "../assets/ologram.png";
 import spaceNebulosa from "../assets/spaceNebulosa.png";
 import earth from "../assets/planets/earth.png";
 import venus from "../assets/planets/venus.png";
-import { Link } from "react-router-dom";
 import mercury from "../assets/planets/mercury.png";
 import neptune from "../assets/planets/neptune.png";
 import saturnus from "../assets/planets/saturnus.png";
@@ -54,6 +53,13 @@ function Projects() {
       description:
         "The Plan Club aims to streamline the organization of social events. Whether you're planning a birthday party, a gathering with friends, or a conference, this application allows you to manage, share, and fund the event among your contacts.",
     },
+    {
+      img: require("../assets/projects/gotam.png"),
+      link: "https://gotam-front.onrender.com/",
+      title: "GOTAM",
+      description:
+        "This business project simplifies the management of employees and work areas, allowing you to assign employees to different areas and access a comprehensive list of employees with their respective work areas and personal and professional information.",
+    },
   ];
 
   const planets = [
@@ -62,7 +68,7 @@ function Projects() {
     { name: venus, projectIndex: 2 },
     { name: mercury, projectIndex: 3 },
     { name: neptune, projectIndex: 4 },
-    { name: saturnus },
+    { name: saturnus, projectIndex: 5 },
     { name: jupiter },
     { name: uranus },
   ];
@@ -80,8 +86,10 @@ function Projects() {
   return (
     <section className="fondoo" id="projects">
       <div className="container-ologram">
+        <div className="container-img">
+          <img src={ologram} alt='ologram'/>
+      
         <div className="container-ologram-cart">
-          <img src={ologram} />
           <Slider
             ref={sliderRef}
             className="cart-slider"
@@ -116,10 +124,10 @@ function Projects() {
               </div>
             ))}
           </Slider>
-        </div>
+        </div>  </div>
       </div>
       <div className="container-planets">
-        <img className="space-img" src={spaceNebulosa} />
+        <img className="space-img" src={spaceNebulosa} alt='space nebulosa'/>
         <div className="planets">
           {planets?.map((planet, index) => (
             <img
