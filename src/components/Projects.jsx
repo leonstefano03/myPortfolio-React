@@ -20,40 +20,54 @@ function Projects() {
   const sliderRef = useRef(null);
   let projects = [
     {
-      img: "https://media.istockphoto.com/id/1180270841/es/vector/fant%C3%A1stico-paisaje-psicod%C3%A9lico-de-estilo-hippie-con-monta%C3%B1as-en-forma-de-rayas-de-colores-y.jpg?s=612x612&w=0&k=20&c=dkvS7KDOdk_pD7ODLlLPrlXOVPHt05xnAlGDzxahoLk=",
+      img: require("../assets/projects/colorGame.png"),
       link: "https://colorgame-plataforma5.netlify.app/",
       title: "COLOR GAME",
       description:
-        "El proyecto Color Game es un juego interactivo desarrollado con HTML y CSS. Presenta al usuario el nombre de un color en formato RGB y desafía al jugador a adivinar el color correcto seleccionando una opción de colores proporcionada.",
+        "The Color Game project is an interactive game developed with HTML and CSS. It presents the user with the name of a color in RGB format and challenges the player to guess the correct color by selecting a provided color option.",
     },
     {
-      img: "https://media.istockphoto.com/id/1336091469/es/vector/sonrisa-divertida-caras-patr%C3%B3n-sin-fisuras-vector-doodle-dibujos-animados-kawaii-dise%C3%B1o-de.jpg?s=612x612&w=0&k=20&c=mvExVxrC8MtUJLZON5L1i3AGO8rX5fDpaa7zRP8GONo=",
+      img: require("../assets/projects/toDoList.png"),
       link: "https://todolist-plataforma5.netlify.app/",
       title: "TO DO LIST",
       description:
-        "El proyecto de la To-Do List es una aplicación sencilla desarrollada con HTML y CSS. Permite al usuario crear y administrar una lista de tareas pendientes. ",
+        "The To-Do List project is a simple application developed with HTML and CSS. It allows the user to create and manage a list of pending tasks.",
     },
     {
-      img: "https://media.istockphoto.com/id/1168711039/es/vector/patr%C3%B3n-de-pollo-de-goma-plano.jpg?s=612x612&w=0&k=20&c=v1G-spwio29KPzj0RfSHhefwaAxxkpPV8PbZ_he5xVU=",
+      img: require("../assets/projects/wheatherChannel.png"),
       link: "https://weatherchannel-plataforma5.netlify.app/",
       title: "WHEATHER CHANNEL",
       description:
-        "El proyecto del Weather Channel es una aplicación web desarrollada con HTML y CSS. Permite al usuario ingresar el nombre de una ciudad y muestra información sobre el clima actual en esa ubicación. Utiliza una API de pronóstico del clima.",
+        "The Weather Channel project is a web application developed with HTML and CSS. It enables the user to input the name of a city and displays information about the current weather in that location. It utilizes a weather forecast API.",
+    },
+    {
+      img: require("../assets/projects/fastDeliveryes.png"),
+      link: "https://fast-delivery-front-rab6.vercel.app/",
+      title: "FAST DELIVERY",
+      description:
+        "Fast Delivery is a logistics app that simplifies delivery management for couriers and businesses. Couriers handle up to 10 daily deliveries, while administrators oversee and optimize operations, including geolocation. We utilize technologies like Next.js, TS, Docker, AWS, Swagger, Jest, and more.",
+    },
+    {
+      img: require("../assets/projects/ElClubDelPlan.png"),
+      link: "https://elclubdelplan.netlify.app/",
+      title: "EL CLUB DEL PLAN",
+      description:
+        "The Plan Club aims to streamline the organization of social events. Whether you're planning a birthday party, a gathering with friends, or a conference, this application allows you to manage, share, and fund the event among your contacts.",
     },
   ];
 
   const planets = [
-    { name: mars, projectIndex:0 },
-    { name: earth, projectIndex:1 },
-    { name: venus, projectIndex :2},
-    { name: mercury},
-    { name: neptune},
-    { name: saturnus},
-    { name: jupiter},
-    { name: uranus}
+    { name: mars, projectIndex: 0 },
+    { name: earth, projectIndex: 1 },
+    { name: venus, projectIndex: 2 },
+    { name: mercury, projectIndex: 3 },
+    { name: neptune, projectIndex: 4 },
+    { name: saturnus },
+    { name: jupiter },
+    { name: uranus },
   ];
   const handlePlanetClick = (projectIndex) => {
-     sliderRef.current.slickGoTo(projectIndex);
+    sliderRef.current.slickGoTo(projectIndex);
   };
   const handleMouseEnter = () => {
     setHovered(true);
@@ -68,8 +82,8 @@ function Projects() {
       <div className="container-ologram">
         <div className="container-ologram-cart">
           <img src={ologram} />
-          <Slider 
-          ref={sliderRef}
+          <Slider
+            ref={sliderRef}
             className="cart-slider"
             dots={true}
             infinite={true}
@@ -83,7 +97,6 @@ function Projects() {
           >
             {projects?.map((project, index) => (
               <div className="cart-project" key={index}>
-     
                 <div className="img-project">
                   <img src={project.img} alt={project.title} />
                 </div>
@@ -108,15 +121,14 @@ function Projects() {
       <div className="container-planets">
         <img className="space-img" src={spaceNebulosa} />
         <div className="planets">
-         
-         {planets?.map((planet, index) => (
-      <img
-        key={index}
-        src={planet.name}
-        alt={planet.name}
-        onClick={() => handlePlanetClick(planet.projectIndex)}
-      />
-    ))}
+          {planets?.map((planet, index) => (
+            <img
+              key={index}
+              src={planet.name}
+              alt={planet.name}
+              onClick={() => handlePlanetClick(planet.projectIndex)}
+            />
+          ))}
         </div>
       </div>
     </section>

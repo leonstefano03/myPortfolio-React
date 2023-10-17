@@ -15,8 +15,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hid
-  den;
+  overflow: hid den;
 }
 .container-ologram-cart {
   position: relative;
@@ -71,12 +70,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: #b197db;
   margin-top: 5%;
 }
 .cart-project h2 {
-  font-size: 1.1vw;
+  font-size: 1vw;
   color: #3c7f72;
   display: flex;
   width: 100%;
@@ -222,158 +221,157 @@
   }
 }
 
- @media (max-width: 450px) {
+@media (max-width: 450px) {
   .fondoo {
     background-image: url("../assets/stars.png");
     height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
-    scroll-snap-align: center;background-size: cover;
+    scroll-snap-align: center;
+    background-size: cover;
     background-position: center;
   }
-  
-.container-ologram {
-  position: relative;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.container-ologram-cart {
-  position: relative;
-  left: 0%;
-  height: 70%;
-  width: 70%;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.container-ologram img {
-  position: absolute;
-  height: 100%;
-  z-index: 10;
-}
-.cart-project {
-  color: #ffffff;
-  display: flex;
-  z-index: 200;
-  align-content: center;
-  justify-content: flex-end;
-  flex-direction: column; /* Agregado para apilar los elementos verticalmente */
-  font-family: "Livvic", sans-serif;
-  height: 100%; /* Modificado para ocupar todo el espacio disponible */
-  width: 100%; /* Modificado para ocupar todo el espacio disponible */
-}
-.cart-slider {
-  color: #ffffff;
-  display: flex;
-  z-index: 200;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Livvic", sans-serif;
-  width: 70%;
-  margin-top: 18%;
-  margin-bottom: 10%;
-}
-.img-project {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 40%;
-}
 
-.img-project img {
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-}
-.cart-project h1 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 4vw;
-  color: #b197db;
-  margin-top: 5%;
-}
-.cart-project h2 {
-  font-size: 3vw;
-  color: #3c7f72;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.button-project {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.button {
-  display: inline-block;
-  width: 20vw;
-  height: 8vw;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in;
-  background-color: transparent;
-  font-family: "Livvic", sans-serif;
-  cursor: pointer;
-}
-
-.button::before,
-.button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transform: skew(15deg);
-  transition: all 0.5s;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.button::before {
-  left: -1vw;
-  background: #240046;
-}
-
-.button::after {
-  right: -1vw;
-  background: #5a189a;
-}
-
-.button:hover::before,
-.button:hover::after {
-  width: 58%;
-}
-
-.button:hover span {
-  color: #e0aaff;
-  transition: 0.3s;
-}
-
-.button span {
-  color: #b197db;
-  font-size: 3.5vw;
-  transition: all 0.3s ease-in;
-}
-.container-planets {
-  display: none;
-}
-
-.space-img {
-  display: none;
-}
-
-
+  .container-ologram {
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
+  .container-ologram-cart {
+    position: relative;
+    left: 0%;
+    height: 70%;
+    width: 70%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .container-ologram img {
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+  }
+  .cart-project {
+    color: #ffffff;
+    display: flex;
+    z-index: 200;
+    align-content: center;
+    justify-content: flex-end;
+    flex-direction: column; /* Agregado para apilar los elementos verticalmente */
+    font-family: "Livvic", sans-serif;
+    height: 100%; /* Modificado para ocupar todo el espacio disponible */
+    width: 100%; /* Modificado para ocupar todo el espacio disponible */
+  }
+  .cart-slider {
+    color: #ffffff;
+    display: flex;
+    z-index: 200;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Livvic", sans-serif;
+    width: 70%;
+    margin-top: 18%;
+    margin-bottom: 10%;
+  }
+  .img-project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+  }
+
+  .img-project img {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .cart-project h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4vw;
+    color: #b197db;
+    margin-top: 5%;
+  }
+  .cart-project h2 {
+    font-size: 3vw;
+    color: #3c7f72;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button-project {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    display: inline-block;
+    width: 20vw;
+    height: 8vw;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    background-color: transparent;
+    font-family: "Livvic", sans-serif;
+    cursor: pointer;
+  }
+
+  .button::before,
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .button::before {
+    left: -1vw;
+    background: #240046;
+  }
+
+  .button::after {
+    right: -1vw;
+    background: #5a189a;
+  }
+
+  .button:hover::before,
+  .button:hover::after {
+    width: 58%;
+  }
+
+  .button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+  }
+
+  .button span {
+    color: #b197db;
+    font-size: 3.5vw;
+    transition: all 0.3s ease-in;
+  }
+  .container-planets {
+    display: none;
+  }
+
+  .space-img {
+    display: none;
+  }
+}
