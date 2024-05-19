@@ -39,13 +39,20 @@ function Projects() {
       description:
         'This business project simplifies the management of employees and work areas, allowing you to assign employees to different areas and access a comprehensive list of employees with their respective work areas and personal and professional information.',
     },
+    {
+      img: require('../assets/projects/landing.png'),
+      link: 'https://consultingcompany.netlify.app/',
+      title: 'LANDING PAGE',
+      description:
+        'This is one of the landing pages I have created as a mockup, designed to maximize the conversion of visitors into potential customers. It provides a smooth and attractive user experience, clearly highlighting the benefits and features of the product or service.',
+    },
   ];
 
   const planets = [
     { name: mars, projectIndex: 0 },
     { name: earth, projectIndex: 1 },
     { name: venus, projectIndex: 2 },
-    { name: mercury },
+    { name: mercury, projectIndex: 3 },
     { name: neptune },
     { name: saturnus },
     { name: jupiter },
