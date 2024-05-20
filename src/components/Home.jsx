@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import astro from "../assets/astro.png";
-import spaceShip from "../assets/spaceShip.png";
-import "../style/Home.css";
+import React, { useEffect, useState } from 'react';
+import astro from '../assets/astro.png';
+import spaceShip from '../assets/spaceShip.png';
+import '../style/Home.css';
 
 function Home() {
   const [isRotated, setIsRotated] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const moveNavbar = () => {
     setIsRotated(!isRotated);
@@ -17,21 +18,33 @@ function Home() {
     } else {
       setIsMoving(!isMoving);
     }
-  }; 
+  };
 
   useEffect(() => {
-    const navbar = document.querySelector(".navbar");
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const navbar = document.querySelector('.navbar');
 
     if (isMoving) {
-      navbar.style.transform = "translateX(0%)";
+      navbar.style.transform = 'translateX(0%)';
     } else {
-      if(window.innerWidth<=450){
-        navbar.style.transform = "translateX(85%)";
-      }else{
-      navbar.style.transform = "translateX(33%)";
+      if (windowWidth <= 450) {
+        navbar.style.transform = 'translateX(85%)';
+      } else {
+        navbar.style.transform = 'translateX(33%)';
       }
     }
-  }, [isMoving, window.innerWidth]);
+  }, [isMoving, windowWidth]);
 
   return (
     <section className="fondo" id="home">
@@ -39,7 +52,7 @@ function Home() {
 
       <div className={`navbar  `}>
         <div
-          className={`cont-spaceship ${isRotated ? "rotate" : "rotate2"}`}
+          className={`cont-spaceship ${isRotated ? 'rotate' : 'rotate2'}`}
           onClick={() => moveNavbar()}
         >
           <img
@@ -48,10 +61,9 @@ function Home() {
             alt="spaceShip-menu"
           />
         </div>
-        <ul className={`nav-links ${isMoving ? "visible" : ""}`}>
+        <ul className={`nav-links ${isMoving ? 'visible' : ''}`}>
           <li>
-            <a href="#home">
-              HOME</a>
+            <a href="#home">HOME</a>
           </li>
           <li>
             <a href="#about">ABOUT ME</a>
@@ -82,12 +94,14 @@ function Home() {
       <div className="cont-info">
         <div className="centrar">
           <div className="info">
-            <h1  class="animate__animated animate__backInLeft ">DEVELOPER</h1>
+            <h1 class="animate__animated animate__backInLeft ">DEVELOPER</h1>
             <div>
-              {" "}
+              {' '}
               <h3 class="animate__animated animate__backInLeft ">FULL-STACK</h3>
             </div>
-            <h5 class="animate__animated animate__backInLeft ">By Stéfano León</h5>
+            <h5 class="animate__animated animate__backInLeft ">
+              By Stéfano León
+            </h5>
           </div>
         </div>
       </div>
