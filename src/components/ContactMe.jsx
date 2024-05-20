@@ -1,7 +1,7 @@
-import React from "react";
-import aliensContact from "../assets/alienContact.png";
-import starsAlone from "../assets/starsAlone.png";
-import "../style/ContactMe.css";
+import React from 'react';
+import aliensContact from '../assets/alienContact.png';
+import starsAlone from '../assets/starsAlone.png';
+import '../style/ContactMe.css';
 
 function ContactMe() {
   return (
@@ -46,8 +46,7 @@ function ContactMe() {
               name="message"
             ></textarea>
             <center>
-              <button className="buttonContact">
-                Submit</button>
+              <button className="buttonContact">Submit</button>
             </center>
           </form>
         </div>
@@ -60,8 +59,12 @@ function ContactMe() {
           <div className="line9"></div>
           <div className="line9"></div>
 
-          <img className="starsAlone" src={starsAlone} />
-          <img className="alienContact" src={aliensContact} />
+          <img className="starsAlone" src={starsAlone} alt="starsAlone" />
+          <img
+            className="alienContact"
+            src={aliensContact}
+            alt="alienContact"
+          />
         </div>
       </div>
     </section>
